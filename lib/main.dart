@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/welcome_screen.dart';
+import 'package:club_engine/screens/club_selector_screen.dart';
 
 void main() {
   runApp(const ClubOS());
@@ -12,9 +12,8 @@ class ClubOS extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ClubOS',
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.blue),
-      home: const WelcomeScreen(),
+      title: 'Club Platform',
+      home: const ClubSelectorScreen(),
     );
   }
 }
